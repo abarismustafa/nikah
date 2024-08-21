@@ -50,6 +50,7 @@ function ActiveMembers() {
 
   const submitData = async () => {
     console.log(initialValue);
+    navigate('/dashboard')
     const validateResult = validation(initialValue);
 
     // If there are errors, focus on the first one
@@ -66,13 +67,13 @@ function ActiveMembers() {
             default:
               break;
           }
-          break; // Exit the loop after focusing on the first error
+          break;
         }
       }
-      return; // Stop further execution if there are validation errors
+      return;
     }
 
-    // console.log(initialValue);
+
     try {
       setLoginSpin(true)
       const res = await loginn(initialValue)
@@ -87,8 +88,6 @@ function ActiveMembers() {
         toastSuccessMessageError(res?.data?.message)
         setLoginSpin(false)
       }
-
-
     } catch (error) {
       // setLoginSpin(false)
     }
