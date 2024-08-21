@@ -11,7 +11,7 @@ function Header() {
                 <ul className="list-inline d-flex justify-content-between justify-content-lg-start mb-0">
                   <li className="list-inline-item">
                     <a href="#" className="text-reset opacity-60">
-                      <span>Welcome to Active Matrimonial CMS</span>
+                      <span>Welcome to Active Nikah Mubarak</span>
                     </a>
                   </li>
                 </ul>
@@ -52,12 +52,12 @@ function Header() {
                     href="https://demo.activeitzone.com/matrimonial"
                     className="d-inline-block py-15px"
                   >
-                    <img
+                    {/* <img
                       src="https://demo.activeitzone.com/matrimonial/public/uploads/all/2BiZbRGY4x4KjEojR4KkiYLxHY2yyfM2bOsERGro.png"
                       alt="testing"
                       className="mw-100 h-30px h-md-40px"
                       height={40}
-                    />
+                    /> */}
                   </a>
                 </div>
                 <ul className="mb-0 pl-0 ml-lg-auto d-lg-flex align-items-stretch justify-content-center justify-content-lg-start mobile-hor-swipe">

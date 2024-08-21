@@ -13,17 +13,17 @@ import TrustedbyMillions from "./TrustedbyMillions/TrustedbyMillions"
 function Home() {
     return (
         <>
-        {/* <Banner/> */}
-        <Bannercopy/>
-        <PremiumMembers/>
-        <SaveMembers/>
-        <HowItsWork/>
-        <TrustedbyMillions/>
-        <NewMembers/>
-        <HappyStories/>
-        <Packages/>
-        <Testimonial/>
-        <BlogSection/>
+            <Banner />
+            {/* <Bannercopy />/ */}
+            <PremiumMembers />
+            <SaveMembers />
+            <HowItsWork />
+            <TrustedbyMillions />
+            <NewMembers />
+            <HappyStories />
+            <Packages />
+            <Testimonial />
+            <BlogSection />
         </>
     )
 }
