@@ -7,6 +7,7 @@ import { useRef, useState } from 'react'
 import { toastSuccessMessage, toastSuccessMessageError } from '../../common/tostShow/TostShow'
 import { loginn, resiter } from '../../../api/Api'
 import { Spinner } from 'react-bootstrap'
+import { ToastContainer } from 'react-toastify'
 function Banner() {
     const navigate = useNavigate()
 
@@ -118,16 +119,15 @@ function Banner() {
         try {
             setLoginSpin(true)
             const res = await resiter(initialValue)
-            console.log(res?.data?.token);
-            if (res?.error == false) {
-                window.localStorage.setItem('userToken', res?.data?.token)
-                toastSuccessMessage(res?.message)
-                setTimeout(() => {
-                    navigate('/admin/dashboard')
-                }, 1000)
+            console.log(res?.data.error);
+            if (res?.data?.error == false) {
+                toastSuccessMessage(res?.data?.message)
+                // setTimeout(() => {
+                //     navigate('/admin/dashboard')
+                // }, 1000)
                 setLoginSpin(false)
             } else {
-                toastSuccessMessageError(res?.message)
+                toastSuccessMessageError(res?.data?.message)
                 setLoginSpin(false)
             }
 
@@ -162,8 +162,8 @@ function Banner() {
                                         <div className="mb-3">
                                             <label htmlFor="contactno" className="form-label">Contact No. <span style={{ color: 'red' }}>*</span></label>
                                             <input type="text" className="form-control" ref={contactRef} id="contactno" placeholder="Enter Contact No" name='contact' value={initialValue.contact} onChange={changeHandle} />
-                                            {error?.contactno && <p style={{ color: 'red', margin: '0px' }}>
-                                                {error?.contactno}
+                                            {error?.contact && <p style={{ color: 'red', margin: '0px' }}>
+                                                {error?.contact}
                                             </p>}
                                         </div>
                                     </div>
@@ -227,6 +227,7 @@ function Banner() {
                     </div>
                 </div>
             </section>
+            <ToastContainer />
         </>
     )
 }

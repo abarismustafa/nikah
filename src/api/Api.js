@@ -12,7 +12,7 @@ export const resiter = (data) => {
 };
 
 export const loginn = (data) => {
-    return axiosInstancee.post(`${baseUrl}staff/login`, data);
+    return axiosInstancee.post(`${baseUrl}user/login`, data);
 };
 
 export const getBed = (value, count, search) => {
