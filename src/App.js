@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./assets/css/vendors.css";
 import "./assets/css/aiz-core.css";
+import "./assets/css/custom.css"
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/Index";
 import HeaderPage from "./pages/common/header/Index";

@@ -1,10 +1,12 @@
-import Footer from "../../../components/common/footer/Footer"
+// import Footer from "../../../components/common/footer/Footer";
+import FooterMain from "../../../components/common/footer/FooterMain";
 
 function FooterPage() {
-    return (
-        <>
-        <Footer/>
-        </>
-    )
+  return (
+    <>
+      {/* <Footer /> */}
+      <FooterMain/>
+    </>
+  );
 }
-export default FooterPage
+export default FooterPage;

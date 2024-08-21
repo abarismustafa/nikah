@@ -52,7 +52,8 @@ body {
 }
 
 .text-primary-grad {
-  background: rgb(253, 41, 123);
+  color: white;
+  /* background: rgb(253, 41, 123);
   background: -moz-linear-gradient(
     0deg,
     rgba(253, 44, 121, 1) 0%,
@@ -69,7 +70,7 @@ body {
     rgba(253, 101, 91, 1) 100%
   );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .btn-primary,
