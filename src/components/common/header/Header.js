@@ -47,7 +47,7 @@ function Header() {
         <header className="aiz-header shadow-md header-top border-gray-300">
           <div className="aiz-navbar position-relative">
             <div className="container">
-              <div className="d-lg-flex justify-content-between text-center text-lg-left" style={{alignItems:"center"}}>
+              <div className="d-lg-flex justify-content-between text-center text-lg-left" style={{ alignItems: "center" }}>
                 <div className="logo">
                   <a
                     href="https://demo.activeitzone.com/matrimonial"
@@ -104,7 +104,7 @@ function Header() {
                   <li className="list-inline-item ml-3">
                     <Link
                       className="btn btn-sm bg-primary-grad text-white fw-600 py-1 border"
-                      to="/register"
+                      to="/users/login"
                     >
                       Login
                     </Link>

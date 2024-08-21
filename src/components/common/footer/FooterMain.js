@@ -3,7 +3,7 @@ import logo from "../../../assets/img/logo/logo2-trans.png";
 function FooterMain() {
   return (
     <>
-      <footer className="footer_sec">
+      {/* <footer className="footer_sec">
         <div className="row">
           <div className="col">
             <div className="significance">
@@ -27,7 +27,7 @@ function FooterMain() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
       <div className="bg-[#FFBABA] p-2">
         <div className="text-[#737373] text-sm text-center">
           All Rights Reserved to Nikah Mubarak.
