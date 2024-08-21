@@ -1,10 +1,10 @@
-import Header from "../../../components/common/header/Header"
+import Header from "../../../components/common/header/Header";
 
 function HeaderPage() {
-    return (
-        <>
-        <Header/>
-        </>
-    )
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
-export default HeaderPage
+export default HeaderPage;

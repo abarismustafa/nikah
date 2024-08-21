@@ -18,7 +18,7 @@ function SelectYourPackage() {
             <div class="col-lg-10 col-xl-8 col-xxl-6 mx-auto">
               <div class="text-center section-title mb-5">
                 <h2 class="mb-0 fw-600 text-dark">Select Your Package</h2>
-                {/* <p class="fw-400 fs-16 opacity-60">Every user registered on Active Matrimonial is verified via photo and mobile phone so you don’t have to worry how real or fake anyone is..</p> */}
+                {/* <p class="fw-400 fs-16 opacity-60">Every user registered on Nikah Mubarak is verified via photo and mobile phone so you don’t have to worry how real or fake anyone is..</p> */}
               </div>
             </div>
           </div>
@@ -490,7 +490,6 @@ function SelectYourPackage() {
               </div>
             </div>
           </div>
-          
         </div>
       </section>
     </>

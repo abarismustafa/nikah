@@ -1,0 +1,37 @@
+.header-top {
+  background-color: #7c0855;
+  color: white !important;
+}
+.footer_sec {
+  background-color: #7c0855;
+  padding: 10px 20px;
+}
+.footer_sec > .row > .col {
+  padding: 10px;
+  text-align: center;
+}
+.significance {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.significance > .m-auto > img {
+  height: 5rem;
+}
+.significance-text {
+}
+.bg-\[\#FFBABA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 186 186 / var(--tw-bg-opacity));
+}
+.text-\[\#737373\] {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.font-medium {
+  font-weight: 500;
+}

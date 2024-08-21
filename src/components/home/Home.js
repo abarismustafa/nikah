@@ -15,7 +15,7 @@ function Home() {
         <>
             <Banner />
             {/* <Bannercopy />/ */}
-            <PremiumMembers />
+            {/* <PremiumMembers />
             <SaveMembers />
             <HowItsWork />
             <TrustedbyMillions />
@@ -23,7 +23,7 @@ function Home() {
             <HappyStories />
             <Packages />
             <Testimonial />
-            <BlogSection />
+            <BlogSection /> */}
         </>
     )
 }

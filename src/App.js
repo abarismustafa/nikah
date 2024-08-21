@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./assets/css/vendors.css";
 import "./assets/css/aiz-core.css";
+import "./assets/css/custom.css"
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/home/Index";
 import HeaderPage from "./pages/common/header/Index";
@@ -51,9 +52,9 @@ function App() {
     <div className="aiz-main-wrapper d-flex flex-column position-relative  bg-white">
       <HeaderPage />
       <Routes>
-        <Route path="/" element={<Navigate to="home" />} />
+        <Route path="/" element={<Navigate to="register" />} />
         {/* <Route path='/matrimonial' element={<HomePage />} > */}
-        <Route path="home" element={<HomePage />} />
+        <Route path="register" element={<HomePage />} />
         <Route path="users/login" element={<ActiveMembersPage />} />
         <Route path="packages" element={<SelectYourPackage />} />
         <Route path="packages/purchage-package-methods" element={<PurchaseThisPackage />} />
@@ -71,29 +72,29 @@ function App() {
         <Route path="dashboard" element={<DashboardPage />}>
           <Route path="" element={<DashBoardHome />} />
           <Route path="gallery-image" element={<GalleryImagePage />} />
-          <Route path='happy-story/create' element={<HappyStoryPage/>} />
-          <Route path='profile-settings' element={<MyProfilePage/>} />
-          <Route path='package-purchase-history' element={<PackegePurchaseHistoryPage/>} />
-          <Route path='package-payment-invoice' element={<PackagePaymentInvoice/>} />
-          <Route path='my-interests' element={<MyInterestPage/>} />
-          <Route path='interest/requests' element={<InterestRequest/>} />
+          <Route path='happy-story/create' element={<HappyStoryPage />} />
+          <Route path='profile-settings' element={<MyProfilePage />} />
+          <Route path='package-purchase-history' element={<PackegePurchaseHistoryPage />} />
+          <Route path='package-payment-invoice' element={<PackagePaymentInvoice />} />
+          <Route path='my-interests' element={<MyInterestPage />} />
+          <Route path='interest/requests' element={<InterestRequest />} />
           <Route path="wallet" element={<MyWalletPage />} />
           <Route path="wallet-recharge-methods" element={<WalletRechargeMathod />} />
-          <Route path="chat" element={<MessagePage/>}/>
+          <Route path="chat" element={<MessagePage />} />
 
-          <Route path="referred-users" element={<ReferalUsersPage/>}/>
-          <Route path="my-referral-earnings" element={<ReferalEarningPage/>}/>
-          <Route path="wallet-withdraw-request-history" element={<WalletWithdrowRequestPage/>}/>
-          <Route path="ignored-list" element={<IgnoreUsreListPage/>}/>
+          <Route path="referred-users" element={<ReferalUsersPage />} />
+          <Route path="my-referral-earnings" element={<ReferalEarningPage />} />
+          <Route path="wallet-withdraw-request-history" element={<WalletWithdrowRequestPage />} />
+          <Route path="ignored-list" element={<IgnoreUsreListPage />} />
 
-          <Route path="change-password" element={<ChangePasswordPage/>}/>
-          <Route path="profile-settings" element={<ManageProfilePage/>}/>
-          <Route path="my-shortlists" element={<MyShortListPage/>}/>
-          <Route path="support-ticket/history" element={<SupportTicketHistoryPage/>}/>
-          <Route path="support-ticket/create" element={<SupportTicketCreate/>}/>
-          <Route path="support-ticket-view-details" element={<SupportTicketViewDetails/>}/>
+          <Route path="change-password" element={<ChangePasswordPage />} />
+          <Route path="profile-settings" element={<ManageProfilePage />} />
+          <Route path="my-shortlists" element={<MyShortListPage />} />
+          <Route path="support-ticket/history" element={<SupportTicketHistoryPage />} />
+          <Route path="support-ticket/create" element={<SupportTicketCreate />} />
+          <Route path="support-ticket-view-details" element={<SupportTicketViewDetails />} />
         </Route>
-          {/* </Route> */}
+        {/* </Route> */}
       </Routes>
       <FooterPage />
     </div>
