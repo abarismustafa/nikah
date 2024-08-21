@@ -34,7 +34,7 @@ function FooterMain() {
         </div>
         <div className="text-[#737373] text-sm text-center">
           <strong>Powered By: </strong>
-          <a className="font-medium" href="https://www.abarissoftech.com/">
+          <a className="font-medium" href="https://www.abarissoftech.com/" target="blank">
             Abaris Soft
           </a>
         </div>
